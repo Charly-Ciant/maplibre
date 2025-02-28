@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>mapbox</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8' />
+<title>MapboxGL</title>
+  
+<- <link href="https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.css" rel="stylesheet"> 
+<- <script src="https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.js"></script>
+  
+<script src="https://unpkg.com/maplibre-gl@^5.1.1/dist/maplibre-gl.js"></script>
+<link href="https://unpkg.com/maplibre-gl@^5.1.1/dist/maplibre-gl.css" rel="stylesheet" />  
+  
+  
+  
+  
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" ></script>  
+  
+<style>
+
+</style>
+</head>
+<body>
+<div id="header">
+    <h1>Mes premiers pas sur Mapbox / Maplibre</h1>
+    <h2>ouin ouin</h2>
+</div>  
+<div id="menubasemap">
+    <label for="style-selector">Choisir un fond de carte :</label>
+    <select id="style-selector">
+      
+        <!---<option value="mapbox://styles/mapbox/streets-v11">
+   Streets</option>-->
+      
+        <option value="https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json">
+   darkmatter</option>
+      
+      <option value="https://openmaptiles.geo.data.gouv.fr/styles/positron/style.json">
+   positron</option>
+      
+        <option value='https://openmaptiles.geo.data.gouv.fr/styles/maptiler-toner/style.json'>toner</option>
+      
+           
+    </select>
+  <hr>
+  <div>
+<button id='Charly'>Charly</button>
+<button id='istanbul'>istanbul kebab</button>
+<button id='Rennes2'>Université Rennes 2</button>
+</div>
+  
+
+  
+</div>  
+ 
+  
+
+
+  
+  
+
+  
+  
+  
+  
+  
+<div id='map'></div>
+
+  ///MENU  
+<div class='menu'>
+    <div class='menu_overlay'>
+
+<hr>
+   <fieldset>
+   <label class="categoryLabel">Données Réferentielles</label>
+   
+     <div>
+      <input type="checkbox" id="RoutesCB" value="Routes" onchange="switchlayer('Routes')" checked/>
+                <label for="RoutesCB">Routes</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="hydrologieCB" value="hydrologie" onchange="switchlayer('hydrologie')" checked/>
+                <label for="hydrologieCB">hydrologie</label>
+            </div>
+            <div>
+                <input type="checkbox" id="bakeryCB" value="bakery" onchange="switchlayer('bakery')" checked/>
+                <label for="bakeryCB">bakery</label>
+            </div>
+        </fieldset>
+      
+      <hr>
+      
+        <fieldset>
+            <label class="categoryLabel">Données métier</label>
+            <div>
+                <input type="checkbox" id="ContourcommuneCB" value="Contourcommune" onchange="switchlayer('Contourcommune')" />
+                <label for="ContourcommuneCB">contour de rennes</label>
+            </div>
+            <div>
+                <input type="checkbox" id="CadastreCB" value="Cadastre" onchange="switchlayer('Cadastre')" />
+                <label for="CadastreCB">Parcelles cadastrales</label>
+            </div>
+            <div>
+                <input type="checkbox" id="PLUCB" value="PLU" onchange="switchlayer('PLU')" />
+                <label for="PLUCB">PLU</label>
+            </div>
+            <div>
+                <input type="checkbox" id="batimentsCB" value="batiments" onchange="switchlayer('batiments')" />
+                <label for="batimentsCB">batiments</label>
+            </div>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <label class="categoryLabel">Mobilité</label>
+            <div>
+                <input type="checkbox" id="VLSCB" value="VLS" onchange="switchlayer('VLS')" />
+                <label for="VLSCB">VLS</label>
+            </div>
+            <div>
+                <input type="checkbox" id="PRCB" value="PR" onchange="switchlayer('PR')" />
+                <label for="PRCB">Parcs relais</label>
+            </div>
+            <div>
+                <input type="checkbox" id="ArretsCB" value="Arrets" onchange="switchlayer('Arrets')" />
+                <label for="PRCB">arret </label>
+            </div>
+        </fieldset>
+    </div>
+</div>
+  
+  
+ 
+  
+  
+  
+<script>
+  
+
+  
+</script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
